@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Open Sans",
+    sans-serif;
+    font-size: 20px;
+    color: #444;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+footer {
+    padding: 1% 0;
+    background-color: #aaa;
+  }
+  
+  .landing_nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: #aaa;
+  }
+  
+  header {
+    padding: 45px 15px;
+  }
+  
+  section {
+    min-height: 200px;
+    padding: 30px 15px;
+    background-color: #bbb;
+  }
+  
+  section:nth-child(even) {
+    background-color: #ddd;
+  }
+  
+  p {
+    margin: 0 auto;
+    max-width: 650px;
+  }
+  
+  p + p {
+    margin-top: 15px;
+  }
+  
+.tab_bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    height: 49pt;
+    background-color: white;
+}
+
+.tab_list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+}
+
+.tab {
+    flex: 1;
+    padding: 0;
+}
+
+.mobile-icon {
+    height: 22pt;
+}
+
+.desktop-icon {
+    display: none;
+}
+
+.dummy_content {
+    height: 1500px;
+}
+
+.logo {
+    display: none;
+}
+
+.tab-title {
+    display: none;
+}
+
+@media only screen and (min-width: 1300px) {
+    .tab_bar {
+        width: 180px;
+        height: 100%;
+        background-color: #202421;
+    }
+
+    .tab_list {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding-left: 17px;
+        align-items: top;
+        justify-content: center;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .logo {
+        display: block;
+        margin: 20px auto;
+    }
+    
+    .mobile-icon {
+        display: none;
+    }
+
+    .desktop-icon {
+        display: block;
+        height: 18pt;
+    }
+
+    .tab-title {
+        display: inline-block;
+        padding: 0;
+        margin-left: 20px;
+        line-height: normal;
+        font-size: 15px;
+        color: white;
+    }
+
+    .tab {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .inactive {
+        color: rgb(171, 171, 171)
+    }
+}
