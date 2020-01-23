@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Account Wireframe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="account.css">
+</head>
+
+<body>
+    <main role="main">
+        <header role="banner">
+            <h1>Account</h1>
+        </header>
+        <section class="account-info">
+            <h2>Account Info</h2>
+            <p><strong>Name:</strong> User Name</p>
+            <p><strong>Email:</strong> user@email.com</p>
+        </section>
+        <section class="pm-settings">
+            <h2>PM Settings</h2>
+            <h3>Current PMs:</h3>
+            <ul class="pm-list">
+                <li>PM 1 - <span>pm1@email.com </span><button>Edit</button> <button>Delete</button></li>
+                <li>PM 2 - <span>pm1@email.com </span><button>Edit</button> <button>Delete</button></li>
+                <li>PM 3 - <span>pm1@email.com </span><button>Edit</button> <button>Delete</button></li>
+            </ul>
+            <div>
+                <label for="pm-name">Name:</label>
+                <input type="text" id="pm-name">
+                <label for="pm-email">Email:</label>
+                <input type="text" id="pm-email">
+                <button type="submit">Add PM</button>
+            </div>
+        </section>
+        <section class="email-templates">
+            <h2>Email Templates</h2>
+            <div>
+                <h3>Template 1</h3>
+                <p>Template Subject</p>
+                <p>Dear XXX,<br>Email template content.<br>Best,<br>Zoe</p>
+                <button>Edit</button>
+                <button>Delete</button>
+            </div>
+            <div>
+                <h3>Template 2</h3>
+            </div>
+            <div>
+                <h3>Template 3</h3>
+            </div>
+            <button>New Template</button>
+            <form action="submit">
+                <h3>New Template Form</h3>
+                <div>
+                    <label for="template-name">Name: </label>
+                    <input type="text" class="block" id="template-name">
+                </div>
+                <div>
+                    <label for="template-subject">Subject: </label>
+                    <input type="text" class="block" id="template-subject">
+                </div>
+                <div>
+                    <label for="template-body">Body: </label>
+                    <textarea name="template-body" id="template-body" cols="100" rows="30"></textarea>
+                </div>
+                <button>Cancel</button>
+                <button type="submit">Save Template</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
