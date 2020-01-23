@@ -1,64 +1,37 @@
 * {
     box-sizing: border-box;
-  }
+}
   
-  body {
-    font-family: "Open Sans",
-    sans-serif;
-    font-size: 20px;
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
     color: #444;
     text-align: center;
     line-height: 1.5;
-  }
-  
-footer {
-    padding: 1% 0;
-    background-color: #aaa;
-  }
-  
-  .landing_nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    background-color: #aaa;
-  }
-  
-  header {
-    padding: 45px 15px;
-  }
-  
-  section {
+}
+
+section {
     min-height: 200px;
     padding: 30px 15px;
     background-color: #bbb;
-  }
-  
-  section:nth-child(even) {
-    background-color: #ddd;
-  }
-  
-  p {
-    margin: 0 auto;
-    max-width: 650px;
-  }
-  
-  p + p {
-    margin-top: 15px;
-  }
-  
-.tab_bar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    height: 49pt;
-    background-color: white;
 }
 
-.tab_list {
+.nav-main {
+      display: flex;
+      flex-direction: column;
+}
+  
+.mobile-tab-bar {
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+    height: 49pt;
+    width: 100%;
+    background-color: white;
+    left: 0;
+}
+
+.tab-list {
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -78,26 +51,42 @@ footer {
     display: none;
 }
 
-.dummy_content {
+.hidden {
+    display: none;
+}
+
+.dummy-content {
     height: 1500px;
 }
 
-.logo {
-    display: none;
-}
-
-.tab-title {
-    display: none;
-}
-
 @media only screen and (min-width: 1300px) {
-    .tab_bar {
-        width: 180px;
-        height: 100%;
-        background-color: #202421;
+    .mobile-tab-bar {
+        display: none;
+    }
+    
+    .nav-main {
+        flex-direction: row;
     }
 
-    .tab_list {
+    .dummy-content {
+        width: 85%;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    .desktop-nav {
+        display: block;
+        background-color: #202421;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 15%;
+    }
+
+    .desktop-tab-list {
         display: flex;
         flex-direction: column;
         list-style: none;
@@ -108,13 +97,11 @@ footer {
         margin-top: 40px;
     }
 
-    .logo {
-        display: block;
-        margin: 20px auto;
-    }
-    
-    .mobile-icon {
-        display: none;
+    .desktop-tab {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding: 15px;
     }
 
     .desktop-icon {
@@ -131,11 +118,8 @@ footer {
         color: white;
     }
 
-    .tab {
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        padding: 15px;
+    .logo {
+        margin: 20px auto;
     }
 
     .inactive {

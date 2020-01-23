@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    color: #444;
+    text-align: center;
+    line-height: 1.5;
+}
+
+section {
+    min-height: 200px;
+    padding: 30px 15px;
+    background-color: #bbb;
+}
+
+.nav-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-tab-bar {
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  height: 49pt;
+  width: 100%;
+  background-color: white;
+  left: 0;
+}
+
+.tab-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+}
+
+.tab {
+  flex: 1;
+  padding: 0;
+}
+
+.mobile-icon {
+  height: 22pt;
+}
+
+.desktop-icon {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.dummy-content {
+  height: 1500px;
+}
