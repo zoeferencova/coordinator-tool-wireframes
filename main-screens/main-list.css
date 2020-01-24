@@ -66,6 +66,12 @@ p + p {
     padding: 3px 0;
 }
 
+.table-body-cell button {
+    padding: 2px;
+    background-color: transparent;
+    border: none;
+}
+
 #status {
     width: 20px;
 }
@@ -83,12 +89,13 @@ p + p {
 }
 
 .mobile-list img {
-    height: 12px;
+    height: 15px;
 }
 
-.mobile-list button {
-    padding: 0;
+.mobile-list .table-body-cell button {
+    padding: 1px;
 }
+
 
 .hidden {
     display: none;
